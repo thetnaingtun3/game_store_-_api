@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'dob', 'image', 'gender',
+        'name', 'email', 'password', 'dob', 'image', 'gender','is_admin',
     ];
 
     /**
@@ -47,5 +47,8 @@ class User extends Authenticatable
     public function like()
     {
         return $this->hasOne(Like::class, 'user_id');
+    }
+    public function isAdmin(){
+        return $this->is_admin;
     }
 }

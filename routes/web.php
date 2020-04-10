@@ -2,12 +2,20 @@
 
 
 
-Auth::routes();
-//Route::resource('/test', 'Dashboard\AboutController@create');
+Auth::routes([
+    'register' => false, // Registration Routes...
+    'reset' => false, // Password Reset Routes...
+    'verify' => true, // Email Verification Routes...
+]);
 
-Route::resource('/about', 'Dashboard\AboutController');
-Route::resource('/team', 'Dashboard\TeamController');
-Route::resource('/category', 'Dashboard\CategoryController');
+//Route::resource('/test', 'Dashboard\AboutController@create');
+Route::group(['middleware'=>['auth','admin']], function () {
+    Route::get('/dashboard', 'HomeController@index')->name('dashboard');
+    Route::resource('/about', 'Dashboard\AboutController');
+    Route::resource('/team', 'Dashboard\TeamController');
+    Route::resource('/category', 'Dashboard\CategoryController');
+    Route::resource('/contact', 'Dashboard\ContactController');
+});
 
 //
 //Route::post('/projects', 'ProjectController@store');
@@ -21,6 +29,6 @@ Route::resource('/category', 'Dashboard\CategoryController');
 //Route::delete('/projects/{id}', 'ProjectController@destroy');
 
 
-Route::resource('/contact', 'Dashboard\ContactController'); //Kyan Tay
-Route::get('/dashboard', 'HomeController@index')->name('dashboard');
+; //Kyan Tay
+
 Route::get('/', 'WebsiteController@index');
