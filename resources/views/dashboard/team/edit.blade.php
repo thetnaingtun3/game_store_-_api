@@ -4,6 +4,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
+                    <a href="{{route('team.index')}}" class="btn btn-success mb-3">Back</a>
                     <h4 class="card-title text-center">Team Page</h4>
                     <form method="post" action="/team/{{$project->id}}" class="mb-4" enctype="multipart/form-data">
                         @csrf

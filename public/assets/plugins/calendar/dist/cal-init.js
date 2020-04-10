@@ -66,7 +66,7 @@
             form.append("<div class='row'></div>");
             form.find(".row")
                 .append("<div class='col-md-6'><div class='form-group'><label class='control-label'>Event Name</label><input class='form-control' placeholder='Insert Event Name' type='text' name='title'/></div></div>")
-                .append("<div class='col-md-6'><div class='form-group'><label class='control-label'>Category</label><select class='form-control' name='category'></select></div></div>")
+                .append("<div class='col-md-6'><div class='form-group'><label class='control-label'>category</label><select class='form-control' name='category'></select></div></div>")
                 .find("select[name='category']")
                 .append("<option value='bg-danger'>Danger</option>")
                 .append("<option value='bg-success'>Success</option>")

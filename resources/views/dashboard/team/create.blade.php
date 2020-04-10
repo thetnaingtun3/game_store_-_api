@@ -15,7 +15,7 @@
                                     <input type="text" class="form-control form-control-line"  required name="name"></div>
                                 <div class="form-group">
                                     <label>Facebook Link</label>
-                                    <input type="text" class="form-control form-control-line" name="Fb_link"></div>
+                                    <input type="text" class="form-control form-control-line" name="fb_link"></div>
                                 <div class="form-group">
                                     <label>Twitter Link</label>
                                     <input type="text" class="form-control form-control-line" name="tw_link"></div>

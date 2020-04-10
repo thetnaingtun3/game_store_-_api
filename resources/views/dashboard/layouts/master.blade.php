@@ -300,6 +300,7 @@
                                                 </h5></div>
                                             <div id="collapseThree" class="collapse" role="tabpanel"
                                                  aria-labelledby="headingThree">
+
                                                 <div class="card-body"> Anim pariatur cliche reprehenderit, enim eiusmod
                                                     high life accusamus terry richardson ad squid.
                                                 </div>
@@ -490,7 +491,8 @@
 <!-- ============================================================== -->
 <script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap tether Core JavaScript -->
-<script src="{{asset('assets/plugins/bootstrap/js/popper.min.js')}}"></script>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="{{asset('assets/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
 <!-- slimscrollbar scrollbar JavaScript -->
 <script src="{{asset('js/jquery.slimscroll.js')}}"></script>
@@ -502,6 +504,7 @@
 <script src="{{asset('assets/plugins/sticky-kit-master/dist/sticky-kit.min.js')}}"></script>
 <!--Custom JavaScript -->
 <script src="{{asset('js/custom.min.js')}}"></script>
+<script src="{{asset('js/custom.js')}}"></script>
 <!-- ============================================================== -->
 <!-- This page plugins -->
 <!-- ============================================================== -->

@@ -112,7 +112,7 @@
             <div class="about-w3lsrow">
                 @foreach ($about as $user)
                     <div class="col-md-7 col-sm-7">
-                        <img  src="{{asset('/gallery/about/'.($user->image))}}" style="width: 655px;
+                        <img src="{{asset('/gallery/about/'.($user->image))}}" style="width: 655px;
                         height: 480%;
     background-size: cover;
     min-height: 30em;
@@ -231,15 +231,19 @@
     <div class="portfolio" id="gallery">
         <div class="container">
             <div class="agileits-title">
+
                 <h3>Our Games</h3>
             </div>
             <ul class="simplefilter w3layouts agileits">
+
                 <li class="active w3layouts agileits" data-filter="all">All</li>
-                <li class="w3layouts agileits" data-filter="1">Category1</li>
-                <li class="w3layouts agileits" data-filter="2">Category2</li>
-                <li class="w3layouts agileits" data-filter="3">Category3</li>
-                <li class="w3layouts agileits" data-filter="4">Category4</li>
-                <li class="w3layouts agileits" data-filter="5">Category5</li>
+
+                    <li class="w3layouts agileits" data-filter="1">Category1</li>
+                    <li class="w3layouts agileits" data-filter="2">Category2</li>
+                    <li class="w3layouts agileits" data-filter="3">Category3</li>
+                    <li class="w3layouts agileits" data-filter="4">Category4</li>
+                    <li class="w3layouts agileits" data-filter="5">Category5</li>
+
             </ul>
 
             <div class="filtr-container w3layouts agileits">
@@ -491,20 +495,20 @@
             </div>
             <div class="agileits-team-grids">
                 @foreach($team as $tea)
-                <div class="col-md-3 agileits-team-grid">
-                    <div class="team-info">
-                        <img src="{{asset('/gallery/team/'.($tea->image))}}" alt="">
-                        <div class="team-caption">
-                            <h4>{{$tea->name}}</h4>
-                            <p>{{$tea->about}}</p>
-                            <ul>
-                                <li><a href="{{$tea->fb_link}}"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="{{$tea->tw_link}}"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="{{$tea->gg_link}}"><i class="fa fa-rss"></i></a></li>
-                            </ul>
+                    <div class="col-md-3 agileits-team-grid">
+                        <div class="team-info">
+                            <img src="{{asset('/gallery/team/'.($tea->image))}}" alt="">
+                            <div class="team-caption">
+                                <h4>{{$tea->name}}</h4>
+                                <p>{{$tea->about}}</p>
+                                <ul>
+                                    <li><a href="{{$tea->fb_link}}"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="{{$tea->tw_link}}"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="{{$tea->gg_link}}"><i class="fa fa-rss"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
                 @endforeach
                 <div class="clearfix"></div>
             </div>

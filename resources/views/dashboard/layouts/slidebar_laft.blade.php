@@ -52,9 +52,10 @@
                                     class="label label-rouded label-themecolor pull-right">4</span></span></a>
                     <ul aria-expanded="false" class="collapse">
                         <li><a href="{{url('upload')}}">Upload Image</a></li>
-                        <li><a href="{{url('about/create')}}">About</a></li>
-                        <li><a href="{{url('team/create')}}">Team</a></li>
-                        <li><a href="index4.html">Modern</a></li>
+                        <li><a href="{{url('about')}}">About</a></li>
+                        <li><a href="{{url('team')}}">Team</a></li>
+                        <li><a href="{{url('category')}}">Category</a></li>
+                        <li><a href="#">Modern</a></li>
                     </ul>
                 </li>
 
