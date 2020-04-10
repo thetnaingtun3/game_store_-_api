@@ -1,7 +1,7 @@
 <!-- footer -->
 <!-- ============================================================== -->
-<footer class="footer">
-    © 2019 Admin Press Admin by themedesigner.in
-</footer>
+{{--<footer class="footer">--}}
+{{--    © 2019 Admin Press Admin by themedesigner.in--}}
+{{--</footer>--}}
 <!-- ============================================================== -->
 <!-- End footer -->
