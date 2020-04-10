@@ -131,7 +131,7 @@ class TeamController extends Controller
     public function destroy($id)
     {
         if (Team::find($id)->delete()) {
-            return redirect()->back()->with('success', 'Category Delete Success');
+            return redirect()->back()->with('success', 'category Delete Success');
         }
     }
 

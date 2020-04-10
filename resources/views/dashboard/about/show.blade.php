@@ -3,6 +3,7 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body">
+                <a href="{{route('about.create')}}" class="btn btn-success mb-3">Add New Category</a>
 
                 <div class="table-responsive">
                     <table class="table table-bordered">

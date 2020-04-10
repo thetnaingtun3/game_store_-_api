@@ -4,6 +4,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
+                        <a href="{{route('about.index')}}" class="btn btn-success mb-3">Back</a>
                         <h4 class="card-title text-center">About Page</h4>
                             <form method="post" action="/about/{{$about->id}}" class="mb-4" enctype="multipart/form-data">
                                 @csrf

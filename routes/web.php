@@ -7,7 +7,8 @@ Auth::routes();
 
 Route::resource('/about', 'Dashboard\AboutController');
 Route::resource('/team', 'Dashboard\TeamController');
-Route::resource('/contact', 'Dashboard\ContactController');
+Route::resource('/category', 'Dashboard\CategoryController');
+
 //
 //Route::post('/projects', 'ProjectController@store');
 //
@@ -18,5 +19,8 @@ Route::resource('/contact', 'Dashboard\ContactController');
 //Route::patch('/projects/{id}', 'ProjectController@update');
 //
 //Route::delete('/projects/{id}', 'ProjectController@destroy');
+
+
+Route::resource('/contact', 'Dashboard\ContactController'); //Kyan Tay
 Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 Route::get('/', 'WebsiteController@index');
